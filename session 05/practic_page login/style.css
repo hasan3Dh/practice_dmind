@@ -1,0 +1,203 @@
+@font-face{
+    font-family: "Open Sans";
+    src: url("./Fonts/OpenSans-Bold.ttf") format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"Open Sans";
+}
+.main-login{
+    width: 800px;
+    height: 500px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "griddetaillogin gridimagelayout";
+
+}
+.detaillogin{
+    grid-area: griddetaillogin;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detaillogin h3{
+    color: #3751FE;
+}
+.detaillogin h2{
+    color: #3751FE;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.detaillogin p{
+    opacity: 0.4;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.detaillogin form{
+    display: flex;
+    flex-direction: column;
+}
+#Emai-section{
+    color: #6c5ce7;
+    font-size: 12px;
+    font-weight: 300;
+}
+input[type="email"]{
+    outline: none;
+    border: none;
+    color: #9b59b6;
+    font-weight: 550;
+}
+.Email-Address{
+    font-size: 10px;
+    opacity: 0.4;
+}
+.input-email-warraper{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe6e9;
+    padding: 3px 0px 5px 5px;
+    border-left: 2px solid #2980b9;
+}
+.input-email-warraper:hover{
+    border: 2.5px solid #9b59b6;
+}
+input[type="password"]{
+    outline: none;
+    border: none;
+}
+.password-Address{
+    font-size: 10px;
+    opacity: 0.4;
+}
+.input-password-warraper{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe6e9;
+    padding: 3px 0px 5px 5px;
+}
+.input-password-warraper:hover{
+    border: 2.5px solid #2980b9;
+}
+.submit-warraper{
+    display: flex;
+    gap: 16px;
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+}
+input[value="Login"]{
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #0C31F1;
+    background-color: #0C31F1;
+    width: 85px;
+    margin: 14px 0;
+}
+input[value="Sign-Up"]{
+    color: #0C31F1;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #0C31F1;
+    background-color: #FFFFFF;
+    width: 85px;
+    margin: 14px 0;
+}
+.Or-login-with_warraper ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.Or-login-with_warraper ul li{
+    color: #636e72;
+}
+.Or-login-with_warraper ul li a{
+    color: #3751FE;
+    text-decoration: none;
+}
+.Remember-forgot-warraper{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    color: #636e72;
+}
+.Remember-forgot-warraper a{
+    color:#636e72;
+    text-decoration: none;
+}
+.checkbox-warraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+
+
+/* side right login  */
+.imagelayout{
+    border-top: 1px solid #3751FE;
+    border-right: 1px solid #3751FE;
+    border-bottom: 1px solid #3751FE;
+    border-radius: 3px;
+    grid-area: gridimagelayout;
+    background-color: #E5E5E5;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "gridlist-werraper"
+    "gridimage-warraper"
+    "gridimage-warraper"
+    "gridimage-warraper";
+}
+.list-werraper{
+    grid-area: gridlist-werraper;
+}
+.list-werraper ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+}
+.list-werraper ul li a{
+    text-decoration: none;
+    font-weight: 200;
+    color: #2d3436;
+    font-size: 14px;
+
+}
+.list-werraper ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #0984e3;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+
+}
+.image-warraper{
+ grid-area: gridimage-warraper ;
+}
+.image-warraper img{
+    width: 100%;
+    margin: auto 0;
+}
+
+

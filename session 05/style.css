@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: "Open Sans";
+}
+header{
+    padding: 0 20rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.box-red{
+    width: 10px;
+    height: 10px;
+    background-color: #c52936;
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header h1{
+    color: #fff;
+    width: 410px;
+    margin-top: 6rem ;
+    margin-bottom: 2rem ;
+    font-size: 45px;
+}
+.imagesslider{
+    padding: 0 12rem;
+}
+section img{
+    width: 100%;
+    height: 450px; 
+}
+main{
+    padding: 0 20rem;
+    color: #fff;
+}
+main h2{
+    font-size: 36px;
+    width: 100%;
+    margin-top: 4rem;
+}
+main p{
+    margin-top: 2rem;
+    font-weight: normal;
+    width: 100%;
+    font-size: 22px;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #181818;
+    border-radius: 100%;
+    margin: 4rem 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.item-warraper{
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+}
+.SelectClients{
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.6;
+}
+.item-warraper{
+    display: flex;
+    gap: 36px;
+}
+.item-warraper div ul li{
+    margin-bottom: 8px;
+}
+.main-dooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "gridlogo-warraper gridicon-warraper";
+    margin-bottom: 5rem;
+}
+.logo-warraper{
+    grid-area: gridlogo-warraper ;
+}
+.icon-warraper{
+    grid-area: gridicon-warraper;
+    direction: rtl;
+    padding-top: 2rem;
+}
+.logo-warraper h1:nth-child(2){
+    color: #c52936;
+}
+svg{
+    width: 20px;
+    margin: 5px;
+}
+.talk-warraper{
+    display: flex;
+    gap: 20px;
+    opacity: 0.6;
+}
+.talk-warraper p{
+    font-size: 10px;
+}
+.footebar{
+    padding: 0 12rem;
+}
+.boxfooter{
+    width: 100%;
+    height: 40px;
+    background-color: #4e0108;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    color: #fff;
+    font-weight: 700;
+}
